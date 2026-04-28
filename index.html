@@ -2,15 +2,20 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio - Leonardo Silva</title>
 
-  <!-- CSS externo -->
+  <!-- Título da página exibido na aba do navegador -->
+  <title>Portfólio - Leonardo</title>
+
+  <!-- Importação do arquivo CSS externo -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- MENU FIXO -->
+  <!-- ==================================================
+       MENU DE NAVEGAÇÃO FIXO
+       Fica visível em todas as seções do site
+  =================================================== -->
   <header>
     <nav>
       <ul class="menu">
@@ -18,63 +23,110 @@
         <li><a href="#formacao">Formação</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#contato">Contato</a></li>
-        <li><button id="btnTema">🌙</button></li>
+
+        <!-- Botão para alternar tema claro/escuro -->
+        <li>
+          <button id="btnTema" title="Alternar tema">🌙</button>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <!-- SOBRE MIM -->
+  <!-- ==================================================
+       SEÇÃO SOBRE MIM
+       Contém informações pessoais e apresentação
+  =================================================== -->
   <section id="sobre">
     <h2>Sobre mim</h2>
+
     <p>
-      Sou estudante de Análise e Desenvolvimento de Sistemas, com interesse
-      em desenvolvimento web. Gosto de aprender novas tecnologias e criar
-      projetos práticos.
+      Olá! Meu nome é Leonardo, tenho 30 anos e moro em Guaratinguetá – SP.
     </p>
-    <p>Hobbies: tecnologia, música e programação.</p>
+
+    <p>
+      Sou estudante de Análise e Desenvolvimento de Sistemas, com grande interesse
+      em desenvolvimento web. Estou sempre buscando aprender novas tecnologias
+      e aplicar esse conhecimento na criação de projetos práticos, visando
+      aprimorar minhas habilidades técnicas e profissionais.
+    </p>
+
+    <p>
+      Nos momentos livres, gosto de me dedicar a atividades relacionadas à
+      tecnologia, games, música e programação.
+    </p>
   </section>
 
-  <!-- FORMAÇÃO -->
+  <!-- ==================================================
+       SEÇÃO FORMAÇÃO
+       Informações acadêmicas e cursos
+  =================================================== -->
   <section id="formacao">
     <h2>Formação</h2>
+
     <ul>
       <li>Curso Superior em Análise e Desenvolvimento de Sistemas</li>
-      <li>Curso de HTML, CSS e JavaScript</li>
+      <li>Estudos em HTML5, CSS3 e JavaScript</li>
       <li>Inglês básico</li>
     </ul>
   </section>
 
-  <!-- PORTFÓLIO -->
+  <!-- ==================================================
+       SEÇÃO PORTFÓLIO
+       Links para trabalhos e projetos desenvolvidos
+  =================================================== -->
   <section id="portfolio">
     <h2>Portfólio</h2>
+
     <ul>
-      <li><a href="#" target="_blank">Projeto 1 - Página HTML</a></li>
-      <li><a href="#" target="_blank">Projeto 2 - Site Responsivo</a></li>
+      <li>
+        <a href="#" target="_blank">
+          Projeto 1 – Página HTML e CSS
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          Projeto 2 – Portfólio Web Responsivo
+        </a>
+      </li>
     </ul>
+
+    <!-- Observação: os links podem ser atualizados futuramente -->
   </section>
 
-  <!-- CONTATO -->
+  <!-- ==================================================
+       SEÇÃO CONTATO
+       Formulário com validação em JavaScript
+  =================================================== -->
   <section id="contato">
     <h2>Contato</h2>
 
     <form id="formContato">
-      <label>Nome</label>
+      <!-- Campo Nome -->
+      <label for="nome">Nome</label>
       <input type="text" id="nome">
 
-      <label>E-mail</label>
+      <!-- Campo E-mail -->
+      <label for="email">E-mail</label>
       <input type="email" id="email">
 
-      <label>Mensagem</label>
+      <!-- Campo Mensagem -->
+      <label for="mensagem">Mensagem</label>
       <textarea id="mensagem"></textarea>
 
+      <!-- Botão de envio -->
       <button type="submit">Enviar</button>
     </form>
 
+    <!-- Mensagem exibida após envio do formulário -->
     <p id="msgResposta"></p>
   </section>
 
-  <!-- JavaScript externo -->
+  <!-- ==================================================
+       IMPORTAÇÃO DO JAVASCRIPT
+       Responsável por validação e interações
+  =================================================== -->
   <script src="js/script.js"></script>
+
 </body>
 </html>
 ``
