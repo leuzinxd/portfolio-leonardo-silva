@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- Título da página exibido na aba do navegador -->
+  <!-- Título exibido na aba do navegador -->
   <title>Portfólio - Leonardo</title>
 
-  <!-- Importação do arquivo CSS externo -->
+  <!-- Importação do CSS externo -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- ==================================================
-       MENU DE NAVEGAÇÃO FIXO
-       Fica visível em todas as seções do site
-  =================================================== -->
+  <!-- ================= MENU FIXO ================= -->
   <header>
     <nav>
       <ul class="menu">
@@ -23,19 +20,15 @@
         <li><a href="#formacao">Formação</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#contato">Contato</a></li>
-
-        <!-- Botão para alternar tema claro/escuro -->
         <li>
-          <button id="btnTema" title="Alternar tema">🌙</button>
+          <!-- Botão para alternar tema -->
+          <button id="btnTema">🌙</button>
         </li>
       </ul>
     </nav>
   </header>
 
-  <!-- ==================================================
-       SEÇÃO SOBRE MIM
-       Contém informações pessoais e apresentação
-  =================================================== -->
+  <!-- ================= SOBRE MIM ================= -->
   <section id="sobre">
     <h2>Sobre mim</h2>
 
@@ -45,21 +38,16 @@
 
     <p>
       Sou estudante de Análise e Desenvolvimento de Sistemas, com grande interesse
-      em desenvolvimento web. Estou sempre buscando aprender novas tecnologias
-      e aplicar esse conhecimento na criação de projetos práticos, visando
-      aprimorar minhas habilidades técnicas e profissionais.
+      em desenvolvimento web. Busco constantemente aprender novas tecnologias e
+      aplicar esse conhecimento na criação de projetos práticos.
     </p>
 
     <p>
-      Nos momentos livres, gosto de me dedicar a atividades relacionadas à
-      tecnologia, games, música e programação.
+      Meus principais hobbies incluem tecnologia, games, música e programação.
     </p>
   </section>
 
-  <!-- ==================================================
-       SEÇÃO FORMAÇÃO
-       Informações acadêmicas e cursos
-  =================================================== -->
+  <!-- ================= FORMAÇÃO ================= -->
   <section id="formacao">
     <h2>Formação</h2>
 
@@ -70,63 +58,56 @@
     </ul>
   </section>
 
-  <!-- ==================================================
-       SEÇÃO PORTFÓLIO
-       Links para trabalhos e projetos desenvolvidos
-  =================================================== -->
+  <!-- ================= PORTFÓLIO ================= -->
   <section id="portfolio">
     <h2>Portfólio</h2>
 
     <ul>
       <li>
-        <a href="#" target="_blank">
-          Projeto 1 – Página HTML e CSS
+        <strong>Protótipo de Jogo – Avatar Evolutivo</strong><br>
+        Jogo em desenvolvimento criado como protótipo para estudo de lógica de
+        programação, estrutura de personagens e evolução de atributos.<br><br>
+
+        <a href="https://github.com/leuzinxd/avatar-evolutivo" target="_blank">
+          🔗 Ver repositório no GitHub
         </a>
       </li>
-      <li>
-        <a href="#" target="_blank">
-          Projeto 2 – Portfólio Web Responsivo
+
+      <li style="margin-top: 15px;">
+        <strong>Portfólio Pessoal</strong><br>
+        Site desenvolvido utilizando HTML5, CSS3 e JavaScript como atividade
+        prática acadêmica da disciplina de Fundamentos da Programação Web.<br><br>
+
+        <a href="https://leuzinxd.github.io/portfolio-leonardo-silva/" target="_blank">
+          🔗 Acessar site
         </a>
       </li>
     </ul>
-
-    <!-- Observação: os links podem ser atualizados futuramente -->
   </section>
 
-  <!-- ==================================================
-       SEÇÃO CONTATO
-       Formulário com validação em JavaScript
-  =================================================== -->
+  <!-- ================= CONTATO ================= -->
   <section id="contato">
     <h2>Contato</h2>
 
+    <!-- Formulário de contato com validação em JavaScript -->
     <form id="formContato">
-      <!-- Campo Nome -->
       <label for="nome">Nome</label>
       <input type="text" id="nome">
 
-      <!-- Campo E-mail -->
       <label for="email">E-mail</label>
       <input type="email" id="email">
 
-      <!-- Campo Mensagem -->
       <label for="mensagem">Mensagem</label>
       <textarea id="mensagem"></textarea>
 
-      <!-- Botão de envio -->
       <button type="submit">Enviar</button>
     </form>
 
-    <!-- Mensagem exibida após envio do formulário -->
+    <!-- Mensagem de retorno do formulário -->
     <p id="msgResposta"></p>
   </section>
 
-  <!-- ==================================================
-       IMPORTAÇÃO DO JAVASCRIPT
-       Responsável por validação e interações
-  =================================================== -->
+  <!-- Importação do JavaScript -->
   <script src="js/script.js"></script>
-
 </body>
 </html>
-``
