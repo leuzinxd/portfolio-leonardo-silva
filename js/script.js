@@ -1,6 +1,6 @@
-// VALIDAÇÃO DO FORMULÁRIO
-document.getElementById("formContato").addEventListener("submit", function(event) {
-  event.preventDefault();
+// Validação do formulário de contato
+document.getElementById("formContato").addEventListener("submit", function (e) {
+  e.preventDefault();
 
   let nome = document.getElementById("nome").value;
   let email = document.getElementById("email").value;
@@ -22,7 +22,7 @@ document.getElementById("formContato").addEventListener("submit", function(event
   this.reset();
 });
 
-// BOTÃO TEMA CLARO/ESCURO
-document.getElementById("btnTema").addEventListener("click", function() {
+// Alternar tema claro/escuro
+document.getElementById("btnTema").addEventListener("click", function () {
   document.body.classList.toggle("dark");
 });
